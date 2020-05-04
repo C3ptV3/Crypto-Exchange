@@ -1,0 +1,309 @@
+.sign-page {
+  background-color: #f7f8fa;
+}
+.contact-wrapper{
+  position: relative;
+  &.contact-bg{
+    &:after{
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      @include tablet{
+        width: 30%;
+      }
+      @include desktops{
+        width: 50%;
+      }
+      @include large-desktops{
+        width: 60%;
+      }
+      @include large-desktops-mid{
+        width: calc(100% - 665px);
+      }
+    }
+  }
+  &.contact-bg-1{
+    &:after{
+      background-image: url(../image/png/contact-page.png);
+    }
+  }
+  &.contact-bg-2{
+    &:after{
+      background-image: url(../image/png/contact-page-2.png);
+    }
+  }
+  .main-block{
+    min-height: 100vh;
+    .omega-form{
+      min-height: calc(100vh - 72px);
+      display: flex;
+      align-items: center;
+      form{
+        padding: 53px 58px 50px;
+        box-shadow: 0 20px 61px rgba(65, 62, 101, 0.14);
+        border-radius: 10px;
+        background-color: #ffffff;
+        width: 100%;
+        // padding-top: 100px;
+        // padding-bottom: 100px;
+      }
+    }
+  }
+}
+.contact-container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @include mobile-lg {
+    max-width: 100%;
+  }
+  @include tablet {
+    margin-left: 0;
+    max-width: 70%;
+  }
+  @include desktops {
+      max-width: 50%;
+  }
+  @include large-desktops {
+      max-width: 40%;
+  }
+  @include large-desktops-mid{
+    min-width: 665px;
+    max-width: 665px;
+  }
+  .main-block{
+    max-width: 413px;
+    margin: 0 auto;
+  }
+}
+.omega-form{
+  .form-title{
+    .title{
+      color: $theme-primary-heading;
+      font-family: $theme-primary-font;
+      font-size: 60px;
+      font-weight: 700;
+      letter-spacing: -1.03px;
+      line-height: 56px;
+      margin-bottom: 15px;
+    }
+    p{
+      color: $theme-primary-text;
+      font-family: $theme-primary-font;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 39px;
+    }
+  }
+  .form-control{
+    padding-left: 28px;
+    margin-bottom: 17px;
+
+    color: #9c9aaa;
+    font-family: $theme-primary-font;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.56px;
+    height: 73px;
+    border-radius: 10px;
+    border: 1px solid #eae9f2;
+    background-color: #ffffff;
+    &::placeholder{
+      color: #9c9aaa;
+    }
+  }
+  .input-with-icon{
+    position: relative;
+    .form-control{
+      padding-left: 50px;
+      @include mobile-lg{
+        padding-left: 70px;
+      }
+    }
+    .input-icon{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 26px;
+      line-height: 1;
+      font-size: 20px;
+  
+    }
+  }
+  .forget-block{
+    position: relative;
+    .forget-link {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+
+      color: $theme-secondary-color;
+      font-family: $theme-primary-font;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 28px;
+    }
+  }
+  .form-check-label{
+    padding-top: 5px;
+    margin-bottom: 20px;
+    label{
+      display: flex;
+      input:checked{
+        ~ .checkbox{
+          &::before{
+            content: "\f14a";
+            font-family: "Font Awesome 5 free";
+            font-weight: 900;
+            color: $theme-secondary-color;
+          }
+        }
+      }
+      .checkbox{
+        position: relative;
+        line-height: 1;
+        top: -2px;
+        margin-right: 8px;
+        min-height: 20px;
+        min-width: 20px;
+        cursor: pointer;
+        &:before{
+          content: "\f0c8";
+          font-family: "Font Awesome 5 free";
+          font-size: 19px;
+          color: #E2E4E8;
+        }
+        &.color-blue{
+          &:before{
+            color: $theme-primary-color;
+          }
+        }
+      }
+      p{
+        color: $theme-primary-text;
+        font-family: $theme-primary-font;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 0;
+        a{
+          color: $theme-secondary-color;
+        }
+      }
+    }
+  }
+  .button-block{
+    // margin-top: 7px;
+    margin-bottom: 0px;
+    .form-btn{
+      height: 60px;
+      border-radius: 10px;
+      background-color: $theme-primary-color;
+      width: 100%;
+      color: #ffffff;
+      font-family: $theme-primary-font;
+      font-size: 21px;
+      font-weight: 500;
+      letter-spacing: -0.66px;
+    }
+    .sign-up-text{
+      color: $theme-primary-text;
+      font-family: $theme-primary-font;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 28px;
+      margin-top: 12px;
+      margin-bottom: 0;
+      a{
+        color: $theme-secondary-color;
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+
+
+.sign-page{
+  &.bg-img {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.6;
+    }
+    .main-block {
+      .omega-form {
+        form {
+          box-shadow: 0 52px 54px rgba(65, 62, 101, 0.25);
+          border-radius: 10px;
+          background-color: rgba(0, 0, 0, 0.44);
+          color: #fff!important;
+        }
+      }
+    }
+    .omega-form {
+      .form-title {
+        .title {
+          color: #fff;
+        }
+        p {
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
+      .form-check-label {
+        label {
+          p {
+            color: rgba(255, 255, 255, 0.7);
+            a {
+              color: $theme-yellow-color;
+            }
+          }
+        }
+      }
+      .button-block {
+        .sign-up-text {
+          color: rgba(255, 255, 255, 0.7);
+          a {
+            color: $theme-yellow-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.frgt-pass-img {
+  background: url(../image/png/forget-pass-bg.png) no-repeat center;
+  background-size: cover;
+  &.bg-img {
+    &:before {
+      opacity: 0.2;
+    }
+  }
+}
+.sign-in-img {
+  background: url(../image/png/sign-in-bg.png) no-repeat center;
+  background-size: cover;
+}
+.sign-up-img {
+  background: url(../image/png/sign-up-bg.png) no-repeat center;
+  background-size: cover;
+  &.bg-img {
+    &:before {
+      opacity: 0.2;
+    }
+  }
+}

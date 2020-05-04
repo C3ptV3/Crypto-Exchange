@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #F5F7FA;
+    background: #F5F7FA;
+    height: 100%;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*Social media*/
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+
+/*Social end*/
+main.py-4{
+    position: relative;
+    min-height: 100vh;
+}
+
+/*Footer*/
+
+.footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.footer-section {
+    font-size: large;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: black;
+}
+
+ul.nav a:hover {
+    color: #7093F7;
+}
+
+.col {
+    border: none;
+}
+
+
+/*Footer end*/
+
+.navbar-dark .navbar-brand {
+    color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: black;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: #212529;
+}
+
+p.copyright {
+    border-top: 2px solid black;
+}
+
+.btn-secondary {
+    color: #000;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-secondary:hover {
+    color: #7093F7;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.show>.btn-secondary.dropdown-toggle {
+    color: #7093F7;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-secondary:focus {
+    box-shadow: none;
+}
+
+.show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active {
+    color: #7093F7;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.btn-secondary:focus {
+    color: #7093F7;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus {
+    color: #7093F7;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.icons8-facebook {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjQiIGhlaWdodD0iNjQiCnZpZXdCb3g9IjAgMCA2NCA2NCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48bGluZWFyR3JhZGllbnQgaWQ9InJoQTQwY3FCbHNKMXd4MlpqZ0pUcWFfMTE4NTAxX2dyMSIgeDE9IjMyLjUyNiIgeDI9IjMyLjUyNiIgeTE9IjE2LjYyNyIgeTI9IjU2LjgzNCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzZkYzdmZiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2U2YWJmZiI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCNyaEE0MGNxQmxzSjF3eDJaamdKVHFhXzExODUwMV9ncjEpIiBkPSJNMzUuNTIsMzguODkxaDYuNzI5bDEuMDU3LTYuODM1SDM1LjUydi0zLjczNmMwLTIuODM5LDAuOTI4LTUuMzU4LDMuNTg0LTUuMzU4aDQuMjY4di01Ljk2NmMtMC43NS0wLjEwMS0yLjMzNS0wLjMyMy01LjMzMi0wLjMyM2MtNi4yNTgsMC05LjkyNiwzLjMwNS05LjkyNiwxMC44MzR2NC41NDhoLTYuNDMzdjYuODM1aDYuNDMzdjE3Ljc4OEMyOS4zODUsNTYuODY5LDMwLjY3Niw1NywzMiw1N2MxLjE5NywwLDIuMzY2LTAuMTA5LDMuNTItMC4yNjZWMzguODkxeiI+PC9wYXRoPjxsaW5lYXJHcmFkaWVudCBpZD0icmhBNDBjcUJsc0oxd3gyWmpnSlRxYl8xMTg1MDFfZ3IyIiB4MT0iMzIiIHgyPSIzMiIgeTE9IjU4IiB5Mj0iNiIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAwIDY0KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFhNmRmZiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2M4MjJmZiI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI3JoQTQwY3FCbHNKMXd4MlpqZ0pUcWIpIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTMyIDdBMjUgMjUgMCAxIDAgMzIgNTdBMjUgMjUgMCAxIDAgMzIgN1oiPjwvcGF0aD48L3N2Zz4=') 50% 50% no-repeat;
+    background-size: 100%;
+}

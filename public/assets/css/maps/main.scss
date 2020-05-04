@@ -1,0 +1,135 @@
+// For Scss : -
+// //-- helpers/variables
+  //-- helpers/mixins
+  //-- base/spacings
+  //-- base/common
+  //-- components/header
+  //-- components/menu
+  //-- pages/landing-1
+  //-- pages/landing-2
+  //-- pages/landing-3
+  //-- pages/landing-4
+  //-- pages/landing-5
+  //-- pages/landing-6
+  //-- pages/landing-7
+  //-- pages/landing-8
+  //-- pages/contact
+  //-- pages/about
+  //-- pages/careerdetails
+  //-- pages/career-page
+  //-- pages/case-study
+  //-- pages/pricing-pages
+  //-- pages/blog-pages
+  //-- pages/contact-pages
+  //-- pages/thank-you
+  //-- pages/404
+  //-- pages/faq
+  //-- pages/review
+  //-- pages/comming-soon
+  //-- pages/terms-page
+
+
+/*********** CSS TABLE OF CONTENTS *******************
+
+|--- 0.Common
+|--- 1.Header
+|--- 2.Menu
+|--- 3.Landing 1
+|--- 4.Landing 2
+|--- 5.Landing 3
+|--- 6.Landing 4
+|--- 7.Landing 5
+|--- 8.Landing 6
+|--- 9.Landing 7
+|--- 10.Contact
+|--- 11.About
+|--- 12.Career Details
+|--- 13.Career Page
+|--- 14.Case Study
+|--- 15.Pricing Pages
+|--- 16.Pricing Pages
+|--- 17.Contact Pages
+|--- 18.Thank You
+|--- 19.404
+|--- 20.Terms page
+
+******************************************************/
+
+
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'base/spacings';
+
+
+/*==== 0.Common -------*/ 
+@import 'base/common';
+
+/*==== 1.Header -------*/ 
+@import 'components/header';
+
+/*==== 2.Menu -------*/ 
+@import 'components/menu';
+
+/*==== 3.Landing 1 -------*/ 
+@import 'pages/landing-1';
+
+/*==== 4.Landing 2 -------*/ 
+@import 'pages/landing-2';
+
+/*==== 5.Landing 3 -------*/ 
+@import 'pages/landing-3';
+
+/*==== 6.Landing 4 -------*/ 
+@import 'pages/landing-4';
+
+/*==== 7.Landing 5 -------*/ 
+@import 'pages/landing-5';
+
+/*==== 8.Landing 6 -------*/ 
+@import 'pages/landing-6';
+
+/*==== 9.Landing 7 -------*/ 
+@import 'pages/landing-7';
+/*==== 10.Landing 8 -------*/ 
+@import 'pages/landing-8';
+
+/*==== 11.Contact -------*/ 
+@import 'pages/contact';
+
+/*==== 12.About -------*/ 
+@import 'pages/about';
+
+/*==== 13.Career Details -------*/ 
+@import 'pages/careerdetails';
+
+/*==== 14.Career Page -------*/ 
+@import 'pages/career-page';
+
+/*==== 15.Case Study -------*/ 
+@import 'pages/case-study';
+
+/*==== 16.Pricing Pages -------*/ 
+@import 'pages/pricing-pages';
+
+/*==== 17.Pricing Pages -------*/ 
+@import 'pages/blog-pages';
+
+/*==== 18.Contact Pages -------*/ 
+@import 'pages/contact-pages';
+
+/*==== 19.Thank You -------*/ 
+@import 'pages/thank-you';
+
+/*==== 20.404 -------*/ 
+@import 'pages/404';
+
+/*==== 21.Terms page -------*/ 
+@import 'pages/terms-page';
+
+
+/*==== 22.Faq page -------*/ 
+@import 'pages/faq';
+/*==== 23.review page -------*/ 
+@import 'pages/review';
+/*==== 24.coming soon page -------*/ 
+@import 'pages/coming-soon';

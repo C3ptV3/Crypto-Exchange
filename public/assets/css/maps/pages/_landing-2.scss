@@ -1,0 +1,747 @@
+.landing-2 {
+  
+  .btn {
+    &-height--45{
+      height: 45px!important;
+    }
+    &-width--141{
+      width: 141px!important;
+    }
+    &-header{
+      font-size: 16px!important;
+      width: 141px!important;  
+      height: 45px!important;
+    }
+    &--primary, &--red {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 60px;
+      border-radius: 5px;
+      border: 1px solid #c31a12;
+      background: $l2-primary-color;
+      color: #ffffff;
+      font-family: $theme-primary-font;
+      font-size: 21px;
+      font-weight: 500;
+      letter-spacing: -0.66px;
+      &.hvr-bounce-to-left {
+        &::before {
+          background: #F9544B;
+          color: #fff;
+        }
+      }
+      &.hvr-bounce-to-left {
+        &:hover {
+          &::before {
+            background: #F9544B;
+            color: #fff;
+          }
+        }
+      }
+      &.hvr-bounce-to-left:hover, &.hvr-bounce-to-left:focus, &.hvr-bounce-to-left:active {
+        color: #fff!important;
+      }
+    }
+    &--secondary {
+      width: 216px;
+      height: 60px;
+      border-radius: 5px;
+      border: 1px solid #eae9f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      font-family: $theme-primary-font;
+      font-size: 21px;
+      font-weight: 500;
+      letter-spacing: -0.66px;
+      background-color: $l2-secondary-color;
+    }
+  }
+
+  /*>>>>>>>> Header area styling <<<<<<<<<*/
+  .site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+
+  .hero-area {
+    background: url(../image/png/l2-hero-bg.png) no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    @include desktops {
+      background-position: center;
+    }
+  }
+  .hero-content {
+    .title {
+      color: $theme-primary-heading;
+      font-family: $theme-primary-font;
+      font-weight: 700;
+      letter-spacing: -2.81px;
+      font-size: 50px;
+      line-height: 56px;
+      margin-bottom: 28px;
+      @include mobile-lg {
+        font-size: 66px;
+        line-height: 70px;
+      }
+      @include desktops {
+        font-size: 76px;
+        line-height: 84px;
+      }
+      @include large-desktops {
+        font-size: 80px;
+        line-height: 84px;
+      }
+    }
+    p {
+      color: $theme-primary-text;
+      font-family: $theme-primary-font;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 39px;
+    }
+    .hero-btn {
+      margin-top: 38px;
+    }
+    .video-link {
+      color: $l2-secondary-color;
+      font-family: $theme-primary-font;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+      margin-top: 12px;
+      display: inline-flex;
+      align-items: center;
+      i {
+        margin-right: 6px;
+      }
+    }
+    @include large-desktops {
+      padding-right: 20px;
+    }
+  }
+  .hero-img-group{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .abs-img{
+      position: absolute;
+      &.img-1{
+        top: -11%;
+        left: -13%;
+        @include desktops{
+          left: 2%;
+        }
+        img {
+          box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+          border: 10px solid #FFFFFF;
+          background-color: #FFFFFF;
+          border-radius: 500px;
+        }
+        
+      }
+      &.img-2{
+        right: -13%;
+        top: 54%;
+        @include brk-point(1100px){
+          right: -23%;
+        }
+        @include large-desktops{
+          right: -13%;
+        }
+        @include large-desktops-mid{
+          right: -28%;
+        }
+        @include brk-point(1500px){
+          right: -43%;
+        }
+      }
+    }
+  }
+  .hero-form{
+    position: relative;
+    .input-group{
+      max-width: 539px;
+      height: 71px;
+      border-radius: 10px;
+      border: 1px solid #EAE9F2;
+      background-color: #FFFFFF;
+      position: relative;
+      i{
+        position: absolute;
+        top: 27px;
+        left:27px;
+        font-size: 19px;
+        color: #cdccd9;
+        margin-top: -2px;
+
+      }
+      input{
+        padding-left: 63px;
+        padding-right: 15px;
+        width: 100%;
+        border: 0;
+        border-radius: 10px;
+        @include brk-point(500px){
+          padding-right: 200px;
+        }
+        &:focus{
+          box-shadow: none;
+          outline: none;
+        }
+        &::placeholder{
+          color: #696871;
+          font-weight: 400;
+        }
+      }
+    }
+    button{
+      margin-top: 15px;
+      @include brk-point(500px){
+          position: absolute;
+          margin-top: 0px;
+          top: 5px;
+          right: 16px;
+          margin-right: 5px;
+      }
+    }
+  }
+  
+
+  /*>>>>>>>> Feature area styling <<<<<<<<<*/
+
+  .feature-section {
+    background: $l2-secondary-color;
+    position: relative;
+    
+    .feature-content {
+      .title {
+        color: #fff;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 21px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .content-btn {
+        margin-top: 35px;
+      }
+    }
+  }
+  
+  .feature-widget {
+    border-radius: 10px;
+    border: 1px solid #eae9f2;
+    background-color: #ffffff;
+    padding: 30px;
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+      width: 399px;
+      min-width: 389px;
+    }
+    .widget-icon {
+      flex-basis: auto;
+      width: 69px;
+      height: 69px;
+      border-radius: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-right: 20px;
+      &.red {
+        color: $l2-primary-color;
+        background-color: rgba(240, 64, 55, 0.1);
+      }
+      &.yellow {
+        background-color: rgba(254, 220, 90, 0.1);
+        color: #fedc5a;
+      }
+      &.blue {
+        background-color: rgba(84, 84, 212, 0.1);
+        color: $l2-secondary-color;
+      }
+      &.ash {
+        background-color: rgba(65, 62, 101, 0.1);
+        color: #413e65;
+      }
+      
+    }
+    .widget-text {
+      flex-basis: calc(100% - 100px);
+      .title {
+        color: $theme-primary-heading;
+        font-family: $theme-primary-font;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.75px;
+        margin-bottom: 16px;
+      }
+      .sub-title {
+        color: $theme-primary-text;
+        font-family: $theme-primary-font;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: -0.5px;
+        line-height: 28px;
+      }
+    }
+  }
+
+
+  /*>>>>>>>> Content area styling <<<<<<<<<*/
+  .content-section1{
+    .content-text{
+      padding-top: 80px;
+        padding-bottom: 50px;
+      @include tablet{
+        padding-top: 80px;
+        padding-bottom: 50px;
+      }
+      @include desktops{
+        padding-top: 190px;
+        padding-bottom: 180px;
+      }
+    }
+  }
+  .content-text {
+    .title {
+      margin-bottom: 25px;
+    }
+    .content-btn {
+      margin-top: 35px;
+    }
+  }
+
+  .content-section1 {
+    position: relative;
+    .content1-img-group {
+      position: absolute;
+      top: -120px;
+      right: -260px;
+      z-index: -1;
+      @include large-desktops {
+        right: -200px;
+      }
+      @include large-desktops-mid {
+        right: -145px;
+      }
+      @include extra-large-desktops {
+        right: 0px;
+      }
+    }
+    .img-half{
+      img{
+        @include brk-point(375px){
+          max-width: 80%;
+        }
+        @include mobile{
+          max-width: 70%;
+        }
+        @include mobile-lg{
+          max-width: 100%;
+        }
+      }
+    }
+    .abs-img.round-img {
+        position: absolute;
+        left: 20px;
+        bottom: 10%;
+        @include mobile{
+          bottom: 15%;
+        }
+        @include desktops{
+          top: 55%;
+          left: -95px;
+          bottom: auto;
+        }
+        img{
+          box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+          border-radius: 500px;
+          border: 10px solid #ffffff;
+          background-color: #ffffff;
+          max-width: 50%;
+          @include mobile-lg{
+            max-width: 70%;
+          }
+          @include tablet{
+            max-width: 80%;
+          }
+          @include desktops{
+            max-width: 100%;
+          }
+        }
+    }
+  }
+  
+
+  .content-img-group{   
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .round-img{
+      position: absolute;
+      top: 50%;
+      left: 0%;
+    }
+
+    &-1{
+      position: relative;
+      .img-1 {
+        img{
+          box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+          border-radius: 10px;
+        }
+        @include brk-point(1450px){
+          margin-left: 69px;
+        }
+      } 
+      .abs-img{
+        position: absolute;
+        &.img-2{
+          position: absolute;
+          top: 52%;
+          left: -3%;
+          z-index: 2;
+          box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+          border: 10px solid #ffffff;
+          background-color: #ffffff;
+          border-radius: 500px;
+          max-width: 50%;
+          @include tablet{
+            max-width: 100%;
+          }
+          @include brk-point(1450px){
+            left: -3%;
+          }
+        }
+
+      }
+    }
+
+    &-2{
+      position: relative;
+      .abs-img{
+        position: absolute;
+        &.img-2{
+          right: 0%;
+          
+          position: absolute;
+          top: 21%;
+          
+          z-index: 2;
+          box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+          border: 10px solid #ffffff;
+          background-color: #ffffff;
+          border-radius: 500px;
+          max-width: 50%;
+          @include tablet{
+            max-width: 100%;
+            right: 15%;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  
+
+  /*>>>>>>>> Content Section 2 area styling <<<<<<<<<*/
+
+  .content-section2 {
+    background: #f7f7fb;
+  }
+  .content-widget {
+    border-radius: 10px;
+    border: 1px solid #EAE9F2;
+    background-color: #FFFFFF;
+    padding: 20px;
+    // width: max-content;
+    min-width: 100%;
+    width: 100%;
+    display: inline-flex;
+    transition: .4s;
+    @include large-desktops {
+      width: 360px;
+      min-width: 360px;
+    }
+    .widget-icon {
+      min-width: 55px;
+      max-width: 55px;
+      min-height: 55px;
+      max-height: 55px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      &.red {
+        color: $l2-primary-color;
+        background-color: rgba(240, 64, 55, 0.1);
+      }
+      &.yellow {
+        background-color: rgba(254, 220, 90, 0.1);
+        color: #FEDC5A;
+      }
+      &.blue {
+        background-color: rgba(84, 84, 212, 0.1);
+        color: $l2-secondary-color;
+      }
+      &.ash {
+        background-color: rgba(65, 62, 101, 0.1);
+        color: #413E65;
+      }
+      &.green {
+        background-color: rgba(119, 191, 65, 0.1);
+        color: #77BF41;
+      }
+      
+    }
+    .widget-text {
+      .title {
+        color: $theme-primary-heading;
+        font-family: $theme-primary-font;
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -0.66px;
+        margin-bottom: 0;
+      }
+      .sub-title {
+        color: $theme-primary-text;
+        font-family: $theme-primary-font;
+        font-size: 21px;
+        font-weight: 300;
+        letter-spacing: -0.66px;
+      }
+    }
+    &:hover {
+      box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+    }
+  }
+
+  /*>>>>>>>> Testimonial Section styling <<<<<<<<<*/
+
+  .testimonial-section {
+    background-color: #f7f7fb;
+  }
+  .testimonial-slider {
+    .slick-arrow {
+      display: none!important;
+    }
+    .slick-dots {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        font-size: 0;
+        width: 17px;
+        height: 8px;
+        border-radius: 4px;
+        background-color: #eae9f2;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: .5s;
+        &.slick-active {
+          width: 45px;
+          height: 8px;
+          border-radius: 4px;
+          background: #5454d4;
+        }
+      }
+    }
+  }
+  .testimonial-card {
+    max-width: 468px;
+    border-radius: 10px;
+    border: 1px solid #eae9f2;
+    background-color: #ffffff;
+    padding: 25px 28px;
+    margin: 0 auto;
+    .card-footer {
+      display: flex;
+      background: transparent;
+      border-top: none;
+      padding: 0;
+      margin-top: 28px;
+      .customer-img {
+        // flex-basis: auto;
+        margin-right: 12px;
+      }
+      .customer-identity {
+        // flex-basis: 68%;
+        .name {
+          color: $l1-primary-heading;
+          font-family: $l1-primary-font;
+          font-size: 21px;
+          font-weight: 700;
+          letter-spacing: -0.66px;
+          line-height: 28px;
+        }
+        .company {
+          color: $l1-primary-text;
+          font-family: $l1-primary-font;
+          font-size: 16px;
+          font-weight: 300;
+          letter-spacing: -0.5px;
+          line-height: 28px;
+        }
+        :last-child {
+          margin-bottom: 0;
+        }
+      }
+
+    }
+    .review-text {
+      color: $l1-primary-heading;
+      font-family: $l1-primary-font;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 39px;
+    }
+  }
+
+  /*>>>>>>>> CTA Section styling <<<<<<<<<*/
+
+  .cta-section {
+    background: #413e65;
+    .section-title {
+      .title {
+        color: #fff;
+        margin-bottom: 30px;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+  .cta-form{
+    position: relative;
+    margin-top: 45px;
+    .input-group{
+      max-width: 445px;
+      height: 70px;
+      border-radius: 10px;
+      border: 1px solid #EAE9F2;
+      background-color: #FFFFFF;
+      position: relative;
+      i{
+        position: absolute;
+        top: 24px;
+        left:22px;
+        font-size: 20px;
+      }
+      input{
+        padding-left: 63px;
+        padding-right: 63px;
+        width: 100%;
+        border: 0;
+        border-radius: 10px;
+        color: #696871;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: -0.56px;
+        text-align: center;
+        &:focus{
+          box-shadow: none;
+          outline: none;
+        }
+        &::placeholder{
+          color: #696871;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+    }
+    button{
+      margin-top: 15px;
+      max-width: 445px;
+      width: 100%;
+    }
+  }
+
+  /*>>>>>>>> Footer area styling <<<<<<<<<*/
+
+  .footer-section {
+   
+    p{
+      color: #696871;
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: -0.5px;
+      line-height: 28px;
+    }
+  }
+  .footer-title {  
+    color: #19191B;
+    font-family: $theme-primary-font;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 25px;
+  }
+  .footer-list {
+    a {
+      color: #19191B;
+      font-family: $theme-primary-font;
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: -0.5px;
+      line-height: 38px;
+      @include tablet {
+        &:hover {
+          color: $theme-blue-color;
+        }
+      }
+    }
+    &.contact-list{
+      a{
+        color: #5454D4;
+      }
+    }
+    
+  }
+  .social-icons{
+    display: inline-flex;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-top: 6px;
+    li{
+      a{
+        color: #FFFFFF;
+        background:#696871;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        transition: .4s;
+        padding: 0 3px;
+        margin: 0 5px;
+        display:inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 500px;
+        @include tablet {
+          &:hover{
+            background: $l2-primary-color;
+          }
+        }
+      }
+    }
+  }
+
+}
+

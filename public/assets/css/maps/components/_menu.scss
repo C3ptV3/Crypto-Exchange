@@ -1,0 +1,139 @@
+
+
+.main-menu{
+  >.dropdown-toggle{
+    transition: .4s;
+  }
+  .nav-item.dropdown{
+    &:hover{
+      >.dropdown-toggle{
+        &:after{
+         @include desktops{
+            transform: rotate(0deg);
+         }
+        }
+      }
+    }
+  }
+  .drop-menu-item.dropdown{
+    >.dropdown-toggle{
+      position: relative;
+      display: block;
+      &:after{
+        // transform: rotate(-90deg);
+        // position: absolute;
+        // top: 2px;
+        // left: 11px;
+        // transition: .4s;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 9px;
+        right: 0;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+    }
+    &:hover{
+      >.dropdown-toggle{
+        &:after{
+         @include desktops{
+            transform: rotate(0deg);
+         }
+        }
+      }
+    }
+  }
+  .dropdown{
+    // &.show,&~.show{
+    //   >.dropdown-toggle{
+    //     &:after{
+    //       transform: rotate(0deg);
+    //     }
+    //   }
+    // }
+    
+  }
+}
+
+.menu-dropdown{
+  @include desktops{
+    top: 110%;
+    position: absolute;
+    min-width: 227px;
+    max-width: 227px;
+    box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+    border-radius: 8px;
+    border: 1px solid #E5E5E5;
+    background-color: #FFFFFF;
+    padding: 15px 0px;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity .4s,top .4s;
+    pointer-events: none;
+    left: -90%;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #eae9f2;
+    background-color: #ffffff;
+    display: block;
+    border-top: 3px solid #5454d4;
+  }
+  >.drop-menu-item{
+    color: #19191b;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    padding-left: 30px ;
+    padding-right: 30px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    &:hover{
+     >a{
+      color: #5454d4;
+     }
+    }
+    &.dropdown{
+      position: relative;
+      
+      &:hover{
+       
+        >.menu-dropdown{
+          @include desktops{
+            top: 10px;
+            opacity: 1;
+            pointer-events: visible;
+            transform: translateX(-100%);
+          
+          }
+        }
+      }
+      >.menu-dropdown{
+        border-top-color: #f04037;
+        // display: block;
+        @include desktops{
+          top: 10px;
+          left: 0%;
+          opacity: 0;
+          transform: translateX(-110%);
+          transition: .4s;
+          pointer-events: none;
+        }
+        >.drop-menu-item{
+          @include brk-point(380px){
+            padding-left: 40px ;
+            padding-right: 40px ;
+          }
+          @include desktops{
+            padding-left: 30px ;
+            padding-right: 30px ;
+          }
+        }
+      }
+    }
+  }
+  &.dropdown-right{
+    left: auto;
+    right: -90%;
+  }
+}
+
