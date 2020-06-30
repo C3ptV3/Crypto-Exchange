@@ -144,21 +144,9 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{URL('deposit')}}">
-                                            <img src="{{asset('assets/image/deposit.svg')}}" width="24" height="24">
-                                            Deposit
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{URL('withdraw')}}">
-                                            <img src="{{asset('assets/image/withdraw.svg')}}" width="24" height="24">
-                                            Withdraw
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
                                         <a class="nav-link" href="{{URL('transactions')}}">
                                             <img src="{{asset('assets/image/exchange.svg')}}" width="24" height="24">
-                                            Trade
+                                            Trade Issues
                                         </a>
                                     </li>
                                     <li class="nav-item">

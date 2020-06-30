@@ -50,8 +50,3 @@ Route::post('/trade/newtrade','BuyController@transactioncreateid')->middleware('
 
 Route::get('/bitcoin','InfoController@btc');
 Route::get('/ethereum','InfoController@eth');
-
-Route::get('/redirect','RedirectController@index');
-
-
-Route::get('/test', 'TestController@index');

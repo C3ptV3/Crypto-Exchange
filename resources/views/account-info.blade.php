@@ -26,7 +26,7 @@
                     @if ($tran['change_type']=="TradeCreate")
                     <td>Trade Issued</td>
                     @elseif($tran['change_type']=="TradeDone-")
-                    <td>Currency Sold</td>
+                    <td>Currency Given</td>
                     @elseif($tran['change_type']=="TradeDone+")
                     <td>Currency Accuired</td>
                     @elseif($tran['change_type']=="TradeSell")
@@ -34,7 +34,7 @@
                     @endif
                     <td>{{$tran['change_currency']}}</td>
                     @if ($tran['new_value']-$tran['old_value']>0)
-                    <td>+{{$tran['new_value']-$tran['old_value']}}</td>
+                    <td color="green">+{{$tran['new_value']-$tran['old_value']}}</td>
                     @else
                     <td>{{$tran['new_value']-$tran['old_value']}}</td>
                     @endif

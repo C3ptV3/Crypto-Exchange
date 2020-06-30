@@ -4,17 +4,18 @@
 </div>
 @endsection
 @section('content')
-@if ($errors->any())
-<div class="alert alert-danger">
-  <ul>
-    @foreach ($errors->all() as $error)
-    <li>{{ $error }}</li>
-    @endforeach
-  </ul>
-</div>
-@endif
+
 
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+  @if ($errors->any())
+  <div class="alert alert-danger">
+    <ul>
+      @foreach ($errors->all() as $error)
+      <li>{{ $error }}</li>
+      @endforeach
+    </ul>
+  </div>
+  @endif
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
     <h1 class="h2">Issue New Trade</h1>
 
@@ -64,8 +65,7 @@
 @endsection
 @section('scripts')
 <script>
-  
-var from = document.getElementById("currency_from");
+  var from = document.getElementById("currency_from");
 var to = document.getElementById("currency_to");
 var buyamountid = document.getElementById("amount");
 var sellamountid = document.getElementById("total");

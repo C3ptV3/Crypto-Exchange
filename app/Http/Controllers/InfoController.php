@@ -17,7 +17,7 @@ class InfoController extends Controller
             ]);
         $json=$res->getBody();
         $array = json_decode($json, true);
-
+                
         $count=0;
         $newarray=[];
         foreach ($array as $arrays){
